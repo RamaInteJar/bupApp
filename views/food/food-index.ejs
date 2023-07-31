@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gitPub - Food Menu</title>
+    <style type="text/css">
+        /* Styling for the body */
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Welcome to gitPub</h1>
+
+    <!-- Sub Heading for Food Menu -->
+    <h2>Food Menu</h2>
+
+    <!-- Unordered List for Food Menu -->
+    <ul>
+        <!-- Loop through each meal in the "food" array -->
+        <% food.forEach((meal, index) => { %>
+        <li>
+            <!-- Display meal name as a link with index as parameter -->
+            <a href="./food/<%= index %>"><%= meal.name %></a>
+        </li>
+        <% }) %>
+    </ul>
+
+    <!-- Sub Heading with link to Drink Menu -->
+    <h3>Thirsty? Find our Drink Menu <a href="/drinks">here!</a></h3>
+</body>
+</html>

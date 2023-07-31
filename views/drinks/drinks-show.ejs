@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foo Bar - Drink Details</title>
+    <style type="text/css">
+        /* Styling for the body */
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>At Foo Bar</h1>
+
+    <!-- Formatting the Drink Name -->
+    <% let formattedDrinkArray = [] %>
+    <% drink.name.split(' ').forEach(word => { 
+        newWord = word.charAt(0).toUpperCase() + word.slice(1)
+        formattedDrinkArray.push(newWord)
+    }) %>
+
+    <!-- Displaying the Drink Name -->
+    <h2><%= formattedDrinkArray.join(' ') %></h2>
+
+    <!-- Displaying the Drink Image -->
+    <img src="<%= drink.image %>.png" alt="<%= formattedDrinkArray.join(' ') %>">
+
+    <!-- Displaying the Drink Price -->
+    <h3>$<%= drink.price %></h3>
+
+    <!-- Link to go back to the Drinks Menu -->
+    <a href="/drinks">Back</a>
+</body>
+</html>

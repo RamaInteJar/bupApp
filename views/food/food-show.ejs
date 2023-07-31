@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foo Bar - Meal Details</title>
+    <style type="text/css">
+        /* Styling for the body */
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>At Foo Bar</h1>
+
+    <!-- Displaying the Meal Name -->
+    <h2><%= meal.name %></h2>
+
+    <!-- Displaying the Meal Image -->
+    <img src="<%= meal.image %>.png" alt="<%= meal.name %>">
+
+    <!-- Displaying the Meal Price -->
+    <h3>$<%= meal.price %></h3>
+
+    <!-- Link to go back to the Food Menu -->
+    <a href="/food">Back</a>
+</body>
+</html>

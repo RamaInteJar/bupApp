@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gitPub - Drinks Menu</title>
+    <style type="text/css">
+        /* Styling for the body */
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Welcome to gitPub</h1>
+
+    <!-- Sub Heading for Drinks Menu -->
+    <h2>Drinks Menu</h2>
+
+    <!-- Unordered List for Drinks -->
+    <ul>
+        <!-- Loop through each drink in the "drinks" array -->
+        <% drinks.forEach((drink, index) => { %>
+        <li>
+            <!-- Convert drink name to Title Case -->
+            <% let formattedDrinkArray = [] %>
+            <% drink.name.split(' ').forEach(word => { 
+                newWord = word.charAt(0).toUpperCase() + word.slice(1)
+                formattedDrinkArray.push(newWord)
+            }) %>
+            
+            <!-- Display drink name as a link with index as parameter -->
+            <a href="/drinks/<%= index %>"><%= formattedDrinkArray.join(' ') %></a>
+        </li>
+        <% }) %>
+    </ul>
+
+    <!-- Sub Heading with link to Food Menu -->
+    <h3>Hungry? Find our Food Menu <a href="/food">here!</a></h3>
+</body>
+</html>
