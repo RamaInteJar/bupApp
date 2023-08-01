@@ -21,7 +21,7 @@ const drinks = [
     },
     {
       name: 'Mint Julep',
-      price: 202,
+      price: 20,
       image: 'https://images.unsplash.com/photo-1470338745628-171cf53de3a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80'
     },
     {
@@ -30,14 +30,14 @@ const drinks = [
       image: 'https://images.unsplash.com/photo-1601924561494-e3b4bfd8a3dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80'
     },
     {
-      name: 'APIPA',
-      price: 43,
-      image: 'https://i.imgur.com/qAhA7pi.jpg'
+      name: 'Nokishita711',
+      price: 23,
+      image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80'
     },
     {
-      name: 'node to joy',
-      price: 56,
-      image: 'https://i.imgur.com/MbVdwZz.jpg'
+      name: 'Cinco de Mayo',
+      price: 24,
+      image: 'https://plus.unsplash.com/premium_photo-1680118594756-0e55df5535b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
     }
   ]
   module.exports = drinks
