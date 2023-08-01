@@ -7,35 +7,37 @@ const port = 3000;
 const drinks = require('./models/drinks.js');
 const food = require('./models/food.js');
 
+app.set('view engine', 'ejs');
+
 // Home route
 app.get('/', (req, res) => {
-    res.render('home_index.ejs');
+    res.render('home-index.ejs');
 });
 
 // INDEX - Drinks
 app.get('/drinks', (req, res) => {
-    res.render('drinks/drinks_index.ejs', {
+    res.render('drinks/drinks-index.ejs', {
         drinks: drinks
     });
 });
 
 // INDEX - Food
 app.get('/food', (req, res) => {
-    res.render('food/food_index.ejs', {
+    res.render('food/food-index.ejs', {
         food: food
     });
 });
 
 // SHOW - Drink by ID
 app.get('/drinks/:id', (req, res) => {
-    res.render('drinks/drinks_show.ejs', {
+    res.render('drinks/drinks-show.ejs', {
         drink: drinks[req.params.id]
     });
 });
 
 // SHOW - Food by ID
 app.get('/food/:id', (req, res) => {
-    res.render('food/food_show.ejs', {
+    res.render('food/food-show.ejs', {
         meal: food[req.params.id]
     });
 });
