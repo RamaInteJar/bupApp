@@ -7,27 +7,64 @@
     <title>gitPub - Food Menu</title>
     <style>
         body{
-            color: blue;
+            background-color: #616D3D;
         }
+
+        h1{
+            text-align: center;
+            font-size: 36px;
+            color: #5F007C;
+        }
+
+        .listContainer{
+            height: 500px;
+            width: 700px;
+            background-image: url("https://images.unsplash.com/photo-1587913956756-4fcf4833241d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80");
+            background-size: cover;
+          margin: auto;
+          font-size: 36px;
+          border-radius: 12px;  
+        }
+
+        li{
+            margin: 6px;
+            color: wheat; 
+        }
+            h2{
+                font-size: 40px;
+                color: wheat;
+                text-align: center;
+            }
+
+            h3{
+                text-align: center;
+                font-size: 32px;
+            }
+            a{
+                color: #F37413;
+            }
+
+
     </style>
 </head>
 <body>
     <!-- Main Heading -->
     <h1>Repas Americain gitPub</h1>
-
-    <!-- Sub Heading for Food Menu -->
+    <div class="listContainer">
+        <!-- Sub Heading for Food Menu -->
     <h2>Food Menu</h2>
+        <!-- Unordered List for Food Menu -->
+        <ul>
+            <!-- Loop through each meal in the "food" array -->
+            <% food.forEach((meal, index) => { %>
+            <li>
+                <!-- Display meal name as a link with index as parameter -->
+                <a href="./food/<%= index %>"><%= meal.name %></a>
+            </li>
+            <% }) %>
+        </ul>
 
-    <!-- Unordered List for Food Menu -->
-    <ul>
-        <!-- Loop through each meal in the "food" array -->
-        <% food.forEach((meal, index) => { %>
-        <li>
-            <!-- Display meal name as a link with index as parameter -->
-            <a href="./food/<%= index %>"><%= meal.name %></a>
-        </li>
-        <% }) %>
-    </ul>
+    </div>
 
     <!-- Sub Heading with link to Drink Menu -->
     <h3>Thirsty? Find our Drink Menu <a href="/drinks">here!</a></h3>

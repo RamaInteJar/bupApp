@@ -1,17 +1,17 @@
 const food = [
     {
       name: 'Sandwich wit boiled egg',
-      price: 12,
+      price: 15,
       image: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1010&q=80'
     },
     {
-      name: 'Roasted ribs with slice tomatoes and potatoes',
-      price: 10,
+      name: 'Roasted ribs sliced tomatoes and potatoes',
+      price: 20,
       image: 'https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80'
     },
     {
       name: 'Hawaiian Chicken PizzaSmoked',
-      price: 1,
+      price: 18.90,
       image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1081&q=80'
     },
     {

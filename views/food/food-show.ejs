@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foo Bar - Meal Details</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Americaine</title>
     <style>
-        body{
-            color: blue;
-        }
+      body {
+        background-color: bisque;
+      }
+      img{
+        height: 500px;
+        width: 500px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .img-container{
+        height: 650px;
+        width: 600px;
+        background-color:#F9BE00;
+        margin: auto;
+        text-align: center;
+        border-radius: 12px;
+      }
+      button {
+        height: 30px;
+        width: 200px;
+        background-color: #7C5F00;
+        font-size: 24px;
+        border-radius: 8px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Main Heading -->
-    <h1>At Foo Bar</h1>
+    <h1></h1>
 
     <!-- Displaying the Meal Name -->
     <h2><%= meal.name %></h2>
 
     <!-- Displaying the Meal Image -->
-    <img src="<%= meal.image %>.png" alt="<%= meal.name %>">
+    <div class="img-container">
+      <img src="<%= meal.image %>.png" alt="<%= meal.name %>" />
+      <!-- Displaying the Meal Price -->
+      <h3>$<%= meal.price %></h3>
+  
+      <!-- Link to go back to the Food Menu -->
+      <button>
+        <a href="/food">Back</a>
+      </button>
+    </div>
 
-    <!-- Displaying the Meal Price -->
-    <h3>$<%= meal.price %></h3>
-
-    <!-- Link to go back to the Food Menu -->
-    <a href="/food">Back</a>
-</body>
+  </body>
 </html>
