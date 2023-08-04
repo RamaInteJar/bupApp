@@ -10,9 +10,9 @@ const drinks = [
       image: 'https://images.unsplash.com/photo-1578664183011-be4a83b2a90d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
     },
     {
-      name: 'hack & coke',
+      name: 'Ment',
       price: 1,
-      image: 'https://images.unsplash.com/photo-1594053186687-7788bbcd6ea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
+      image: 'https://images.unsplash.com/photo-1587223962930-cb7f31384c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'
     },
     {
       name: 'icetea long Island',
